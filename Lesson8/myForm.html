@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Favorite Vonnegut Titles</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/myForm.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rakkas&family=Vollkorn&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+        <span id="heading">Kurt Vonnegut</span>
+        <nav style="float: right;">
+            <a href="../Lesson6/flexboxModel.html">Favorites</a>
+            <a href="../Lesson7/multimedia.html">Multimedia</a>
+            <a href="../Lesson8/myForm.html">Contact</a>
+        </nav><hr>
+        <span id="quote">And I urge you to please notice when you are happy, and exclaim or murmur or think at some point,
+            'If this isn't nice, I don't know what is.'</span>
+        </header>
+        <main>
+            <span id="secondheading">Join our mailing list!</span><hr style="margin-bottom: 20px;">
+            <form name="mailing" id="mailing" action="https://lisabalbach.com/CIT180/Lesson8/FormProcessor.html" method="get" enctype="text/plain" / >
+                    <fieldset class="field">
+                        <legend>Personal Details</legend>
+                            <p><label for="name">Name</label><br>
+                                <input class="formEntry" id="name" name="name" type="text" placeholder="Name" required autofocus></p>
+                            <p><label for="email">Email</label><br>
+                                <input class="formEntry" id="email" name="email" type="email" placeholder="example@domain.com" required></p>
+                            <p><label for="telephone">Telephone</label><br>
+                                <input class="formEntry" id="telephone" name="telephone" type="tel" placeholder="(999) 123-1234" required></p>
+                            <p><label for="address">Address</label><br>
+                                <input class="formEntry" name="address" id="address" placeholder="123 Private Dr."></p>
+                            <p><label for="city">City</label><br>
+                                <input class="formEntry" name="city" id="city" placeholder="Provincetown"></p>
+                            <p><label for="state">State</label><br>
+                                <input class="formEntry" name="state" id="state" placeholder="MA"></p>   
+                            <p><label for="zip">ZipCode</label><br>
+                                <input type="text" class="formEntry" id="zip" name="zip" placeholder="02657"></p>                                 
+                    </fieldset>
+                    <fieldset class="field">
+                        <legend>Reading Preferences</legend>
+                            <p><label for="select1">How many of the author's works have you read already?</label><br>
+                                <select class="formEntry" name="select1" id="select1">
+                                    <option value="blank">None</option>
+                                    <option value="few">A few of them</option>
+                                    <option value="half" selected>About half of them</option>
+                                    <option value="almostall">Almost all of them</option>
+                                    <option value="all">All of them</option>
+                                </select></p>
+                            <p><label for="titles">Which is your favorite title by the author?</label><br>
+                                <input class="formEntry" id="titles" name="titles" list="select2" placeholder="Please select" required>
+                                    <datalist id="select2">
+                                        <option value="All of them" label="All of them"></option>
+                                        <option value="Player Piano" label="Player Piano"></option>
+                                        <option value="The Sirens of Titan" label="The Sirens of Titan"></option>
+                                        <option value="Canary in a Cathouse" label="Canary in a Cathouse"></option>
+                                        <option value="Mother Night" label="Mother Night"></option>
+                                        <option value="Cat's Cradle" label="Cat's Cradle"></option>
+                                        <option value="God Bless You, Mr. Rosewater" label="God Bless You, Mr. Rosewater"></option>
+                                        <option value="Welcome to the Monkey House" label="Welcome to the Monkey House"></option>
+                                        <option value="Slaughterhouse - Five" label="Slaughterhouse - Five"></option>
+                                        <option value="Happy Birthday, Wanda June" label="Happy Birthday, Wanda June"></option>
+                                        <option value="Between Time and Timbuktu" label="Between Time and Timbuktu"></option>
+                                        <option value="Breakfast of Champions" label="Breakfast of Champions"></option>
+                                        <option value="Wampeters, Foma, and Granfalloons" label="Wampeters, Foma, and Granfalloons"></option>
+                                        <option value="Slapstick" label="Slapstick"></option>
+                                        <option value="Jailbird" label="Jailbird"></option>
+                                        <option value="Palm Sunday" label="Palm Sunday"></option>
+                                        <option value="Deadeye Dick" label="Deadeye Dick"></option>
+                                        <option value="Galapagos" label="Galapagos"></option>
+                                        <option value="Bluebeard" label="Bluebeard"></option>
+                                        <option value="Hocus Pocus" label="Hocus Pocus"></option>
+                                        <option value="Fates Worse Than Death" label="Fates Worse Than Death"></option>
+                                        <option value="Timequake" label="Timequake"></option>
+                                        <option value="Bagombo Snuff Box" label="Bagombo Snuff Box"></option>
+                                        <option value="God Bless You, Dr. Kevorkian" label="God Bless You, Dr. Kevorkian"></option>
+                                        <option value="A Man Without A Country" label="A Man Without A Country"></option>
+                                        <option value="Armageddon in Retrospect" label="Armageddon in Retrospect"></option>
+                                        <option value="Look at the Birdie" label="Look at the Birdie"></option>
+                                        <option value="While Mortals Sleep" label="While Mortals Sleep"></option>
+                                        <option value="We Are What We Pretend To Be" label="We Are What We Pretend To Be"></option>
+                                        <option value="Letters" label="Letters"></option>
+                                        <option value="None of the above" label="None of the above"></option>
+                                    </datalist></p>
+                            <p><span>Why did you start reading the author's works?</span><br>
+                                <label for="recommended"><input type="checkbox" name="boxes" id="boxes" value="recommended">Recommended to me</label><br>
+                                <label for="required"><input type="checkbox" name="boxes" id="boxes" value="required">Required reading</label><br>
+                                <label for="stumbled"><input type="checkbox" name="boxes" id="boxes" value="stumbled">Stumbled onto it</label><br>
+                                <label for="other"><input type="checkbox" name="boxes" id="boxes" value="other">Other</label><br>
+                                <textarea class="formEntry" name="textArea" id="textArea" cols="25" rows="1" placeholder="If other, please describe here."></textarea></p>
+                            <p><span>How often do you read a new novel?</span><br>
+                                <input type="radio" id="options" name="options" value="onceperweek" checked><label for="options">Once a week</label><br/>
+                                <input type="radio" id="options" name="options" value="abouteverymonth"><label for="options">About every month</label><br/>
+                                <input type="radio" id="options" name="options" value="fewperyear"><label for="options">A few per year</label><br/>
+                                <input type="radio" id="options" name="options" value="idk"><label for="options">Don't remember</label><br></p>
+                        <input type="hidden" name="mailto" id="mailto" value="mailto:harju8@mail.nmc.edu">
+                    </fieldset>
+                    <br>
+                    <div style="width:100%">
+                        <p style="text-align:center; margin:auto;">
+                        <button class="button" id="submit" type="submit" value="submit">Submit</button>
+                        <button type="reset" id="reset" class="button" value="reset">Reset</button></p>
+                    </div>
+            </form>
+        </main>
+    </body>
+</html> 

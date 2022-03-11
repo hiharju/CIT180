@@ -67,15 +67,35 @@ div{
     font-size: 22px;
     text-align: center;
 }
-a:visited{
+nav>a{
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px 10px 10px 0;
+    font-style: italic;
+}
+nav>a:visited{
     color: black;
 }
-a:hover{
+nav>a:hover{
+    color: white;
+    background-color: black;
+    transition: .2s ease-in-out;
+}
+nav>a:active{
+    color: black;
+    background-color: white;
+    transition: .1s ease-in-out;
+}
+section>a:visited{
+    color: black;
+}
+section>a:hover{
     filter: brightness(50%);
     transition: .2s ease-in-out;
 }
-a:hover + div{   
+section>a:hover + div{   
     display:block;
     position: relative;
-    top: -50px;
+    top: -50px; 
 }

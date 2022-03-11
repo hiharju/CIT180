@@ -1,0 +1,147 @@
+body{
+    width: 90%;
+    margin: 5% auto;
+    min-width: 700px;
+}
+main{
+    max-width: 1200px;
+    margin: auto;
+}
+form{
+    display: flex;
+    width: 75%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+fieldset{
+    border: none;
+    font-family: 'Vollkorn';
+}
+p{
+    width: 450px;
+}
+header{
+    margin-bottom: 1%;
+    padding-bottom: 0;
+}
+hr{
+    border-top: 2px solid black;
+    margin: 0 0 5px;
+    width: 100%;
+}
+div{
+    color: black;
+    font-family: 'Vollkorn';
+    font-weight: 100;
+    font-size: large;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    line-height: 160%;
+}
+.button{
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: thin solid;
+    margin: 10px;
+    background-color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+#submit{
+    border: #6fb07f;
+}
+#submit:hover{
+    color: white;
+    background-color: #6fb07f;
+    transition: .2s ease-in-out;
+    transform: scale(1.1);
+}
+#reset{
+    border: #e44e4e;
+}
+#reset:hover{
+    color: white;
+    background-color: #e44e4e;
+    transition: .2s ease-in-out;
+    transform: scale(1.1);
+    
+}
+#heading{
+    font-family: 'Rakkas', cursive;
+    font-size: 43px;
+    font-weight: 400;
+    text-align: left;
+    padding: 0 0 0 4%;
+    margin-bottom: 0;
+    position: relative;
+    bottom: -20px;
+    max-width: 1000px;
+    min-width: 700px;
+}
+#quote{
+    font-family: 'Vollkorn', sans-serif;
+    font-style: italic;
+    padding: 0 0;
+    margin: 0 0 5% 4%;
+    font-size: 22px;
+    display: inline-block;
+    max-width: 1000px;
+    min-width: 400px;
+}
+#secondheading{
+    font-family: 'Vollkorn' sans-serif;
+    margin: 0 0 0 4%;
+    font-size: 22px;
+}
+.formEntry{
+    box-shadow: rgba(100, 100, 111, 0.603) 0px 7px 29px 0px;
+    /* border: thin rgba(100, 100, 111, 0.479); */
+    border: none;
+    border-radius: 10px;
+    margin-top: 0;
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+}
+.field{
+    flex: 1;
+    min-width: 340px;
+    max-width: 50%;
+}
+.header{
+    text-align: left;
+    position: relative;
+    width: 120%;
+    top: 6px;
+    padding: 0 25px 0 10px;
+}
+.smallheader{
+    font-size: medium;
+    text-align: left;
+    padding: 0 25px 0 10px;
+    margin-bottom: 10px;
+}
+a{
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px 10px 10px 0;
+    font-style: italic;
+}
+a:visited{
+    color: black;
+}
+a:hover{
+    color: white;
+    background-color: black;
+    transition: .2s ease-in-out;
+}
+a:active{
+    color: black;
+    background-color: white;
+    transition: .1s ease-in-out;
+}
