@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Favorite Vonnegut Titles</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/flexboxModel.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rakkas&family=Vollkorn&display=swap" rel="stylesheet">
+        <style>
+            article{
+                width: 95%;
+                margin: 0 auto;
+                padding: 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+            }
+            image{
+                flex: 1;
+                margin-top: 2% 0 0;
+                padding: 2% 0 0;
+                min-width: fit-content;
+                min-height: fit-content;
+                overflow: hidden; 
+                vertical-align: bottom;
+            }
+            section{
+                margin: 0 auto;
+            }
+            section:hover{
+                animation: rock 1s ease-in-out;
+            }
+            @keyframes rock {
+                  0%{transform: rotate(0);}
+                 25%{transform:rotate(2deg);}
+                 75%{transform: rotate(-2deg);}
+                100%{transform: rotate(0deg);}
+            }
+            footer{
+                font-family: 'Vollkorn';
+                padding: 0 0 0 4%;
+                margin: 0;
+                text-align: left;
+            }
+            div{
+                display: hidden;
+                color: white;
+                font-family: 'Rakkas', cursive;
+                font-weight: 100;
+                font-size: 22px;
+                text-align: center;
+            }
+            section>a:visited{
+                color: black;
+            }
+            section>a:hover{
+                filter: brightness(50%);
+                transition: .2s ease-in-out;
+            }
+            section>a:hover + div{   
+                display:block;
+                position: relative;
+                top: -50px; 
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+        <span id="heading">Kurt Vonnegut</span>
+        <nav style="float: right;">
+            <a href="../Lesson6/flexboxModel.html">Favorites</a>
+            <a href="../Lesson7/multimedia.html">Multimedia</a>
+            <a href="../Lesson8/myForm.html">Contact</a>
+        </nav><hr>
+        <span id="quote">And I urge you to please notice when you are happy, and exclaim or murmur or think at some point,
+            'If this isn't nice, I don't know what is.'</span>
+        </header>
+        <main>
+            <article>
+                <section>
+                    <a href="https://www.penguinrandomhouse.com/books/184345/slaughterhouse-five-by-kurt-vonnegut/"><img src="media/slaughterhouse.jpeg" alt="Slaughterhouse Five Cover Art"></a>
+                    <div>Slaughterhouse-Five</div>
+                </section>
+                <section>
+                    <a href="https://www.penguinrandomhouse.com/books/184324/bluebeard-by-kurt-vonnegut/"><img src="media/bluebeard.jpeg" alt="Bluebeard Cover Art"></a>
+                    <div>Bluebeard</div>
+                </section>
+                <section>
+                    <a href="https://www.penguinrandomhouse.com/books/184327/breakfast-of-champions-by-kurt-vonnegut/"><img src="media/breakfast.jpeg" alt="Breakfast of Champions Cover Art"></a>
+                    <div>Breakfast of Champions</div>
+                </section>
+                <section>
+                    <a href="https://www.penguinrandomhouse.com/books/184346/the-sirens-of-titan-by-kurt-vonnegut/"><img src="media/sirens.jpeg" alt="The Sirens of Titan Cover Art"></a>
+                    <div>The Sirens of Titan</div>
+                </section>
+                <section>
+                    <a href="https://www.penguinrandomhouse.com/books/184339/mother-night-by-kurt-vonnegut/"><img src="media/mothernight.jpeg" alt="Mother Night Cover Art"></a>
+                    <div>Mother Night</div>
+                </section>
+                <section>
+                    <a href="https://www.penguinrandomhouse.com/books/184332/galapagos-by-kurt-vonnegut/"><img src="media/galapagos.jpeg" alt="Galapagos Cover Art"></a>
+                    <div>Galapagos</div>
+                </section>
+            </article>
+        </main>
+        <footer><span>Cover Art From:  </span><cite><a href="https://www.penguinrandomhouse.com/authors/32175/kurt-vonnegut">Penguin Random House</a></cite>
+        </footer>
+    </body>
+</html> 

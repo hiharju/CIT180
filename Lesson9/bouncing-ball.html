@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Bouncing Ball</title>
+        <style>
+            body{
+                display: flex;
+                flex-direction: column;
+                margin-left: 100px;
+            }
+            .ball{
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+                background: radial-gradient(lightgreen, black);
+            }
+            .ballShadow{
+                border-radius: 50%;
+                width: 100px;
+                height: 10px;
+                background-color: black;
+                margin-top: 390px;
+            }
+            div{
+                animation: bounce 0.5s 1s infinite alternate ;
+            }
+            @keyframes bounce{
+                from{
+                    transform: translate3d(0, 0, 0);
+                }
+                to{
+                    transform: translate3d(0, 400px, 0);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="ball"></div>
+        <p class="ballShadow"></p>
+    </body>
+</html>
